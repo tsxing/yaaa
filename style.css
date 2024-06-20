@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    position: relative;
+}
+
+.head{
+    height: 225px;
+    width: 150px;
+    border-radius: 40% 40% 0 0;
+    background-color: #fbf4ed;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    box-shadow: 0px 10px 10px #ede1d5 inset;
+    animation: head_bob 1s infinite;
+}
+
+@keyframes head_bob{
+    50%{
+        height: 200px;
+        top: 150px;
+    }
+}
+
+.eyes{
+    width: 14px;
+    height: 14px;
+    background-color:#905d2e ;
+    border-radius: 50%;;
+    position:absolute;
+}
+
+.eye1{
+    top: 75px;
+    left: 38px;
+}
+.eye2{
+    top: 75px;
+    left: 100px;
+}
+.beak{
+    background-color: #fac366;
+    height: 32px;
+    width: 62px;
+    border-radius: 45%;
+    position: absolute;
+    top: 80px;
+    left: 44px;
+    animation: beak_breathe 2s infinite;
+    box-shadow: 4px 5px 20px #ec9c47 inset;
+
+}
+
+@keyframes beak_breathe{
+    50%{
+        width: 64px;
+        height: 34px;
+        left: 43px;
+        top: 82px;
+    }
+}
+
+.body2{
+    background-color:#f0c346 ;
+    height: 175px;
+    width: 150px;
+    position: absolute;
+    top: 325px;
+    left: 175px;
+    border-radius: 0 0 40% 40%;
+    box-shadow: 15px 10px 40px #d7a416 inset;
+    animation: body_bob 1s infinite;
+}
+
+@keyframes body_bob{
+    50%{
+        top: 350px;
+        height: 150px;
+    }
+}
+
+
+.center_fin{
+    position: absolute;
+    background-color: #f6e3af;
+    height: 125px;
+    width: 100px;
+    border-radius: 0 0 50% 50%;
+    left: 25px;
+}
+
+.fin1{
+    position: absolute;
+    background-color: #fdefca;
+    height: 100px;
+    width: 25px;
+    border-radius: 0 0 90% 0%;
+
+}
+
+.fin2{
+    position: absolute;
+    background-color: #fdefca;
+    height: 100px;
+    width: 25px;
+    border-radius: 0 0 0% 90%;
+    right: 0px;
+
+}
+
+.feet{
+    position: absolute;
+    background-color: #fda84e;
+    height: 35px;
+    width: 35px;
+    border-radius: 40%;
+    bottom: 0;
+}
+
+.feet1{
+    left: 0;
+}
+.feet2{
+    right: 0;
+}
